@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background: whitesmoke;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  justify-items: auto;
+}
+
+label.logo {
+  color: blue;
+  font-size: 30px;
+  line-height: 80px;
+  margin-left: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul {
+  margin-left: 6em;
+  margin-right: 15%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 100%;
+  left: 10px;
+}
+
+nav ul li {
+  line-height: 80px;
+  cursor: pointer;
+}
+nav ul li a {
+  font-size: 20px;
+  margin: 0 10px;
+  text-transform: capitalize;
+}
+
+.icon {
+  display: flex;
+  position: relative;
+  bottom: 200%;
+  gap: 20px;
+  float: right;
+  right: 2em;
+  cursor: pointer;
+}
+
+.icon i {
+  font-size: 20px;
+  line-height: 80px;
+}
+
+.check {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.home {
+  background-image: url("./banner-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.home h1 {
+  padding-top: 7%;
+  /* padding: 20px; */
+  text-align: center;
+  font-size: 40px;
+}
+#sec1 {
+  color: orange;
+}
+
+.home p {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  color: gray;
+}
+.home button {
+  padding: 5px;
+  width: 10%;
+  height: 14%;
+  border-radius: 15px;
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  background: none;
+  text-transform: capitalize;
+  margin-left: 45%;
+}
+.home button:hover {
+  background-color: orange;
+}
+
+.features h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px;
+  margin-top: 30px;
+}
+
+#box {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* mediun screen below */
+@media (max-width: 768px) {
+  label.logo {
+    font-size: 20px;
+  }
+
+  .check {
+    display: block;
+    font-size: 25px;
+    line-height: 83px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 35%;
+    height: 40vh;
+    background: green;
+    top: 100px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 450px;
+    left: -100%;
+    transition: all 1.5s;
+  }
+
+  nav ul li {
+    position: relative;
+    bottom: 20px;
+    height: 40px;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  .icon {
+    position: static;
+    gap: 15px;
+    margin-right: 15px;
+  }
+
+  .icon i {
+    display: inline;
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
