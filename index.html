@@ -32,21 +32,21 @@
       <div class="icon">
         <i class="fa-solid fa-bars" class="check" id="check"></i>
         <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
-        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-cart-shopping" data-id="cart"></i>
+        <i class="fa-solid fa-user" data-id="user"></i>
       </div>
       <div class="d-none" id="search">
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           <i class="fas fa-search"></i>
         </form>
       </div>
     </nav>
 
     <!-- first section -->
-    <section class="home">
-      <div class="container text-center pt-3">
-        <h1>Fresh And <span id="org">Organic</span> Products For Your</h1>
+    <section class="home pt-5 mx-auto">
+      <div class="container text-center pt-5 mx-auto">
+        <h1 class="">Fresh And <span id="org">Organic</span> Products For Your</h1>
         <p>
           Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quasi,
           Nobis!
@@ -56,7 +56,7 @@
     </section>
 
     <!-- features section -->
-    <section class="container text-center p-1 pt-5" id="features">
+    <section class="container text-center pt-5" id="features">
       <h1 class="p-5 pt-4 mt-5">Our <span id="box">Features</span></h1>
       <!-- card section -->
       <div class="container p-5">
@@ -113,7 +113,7 @@
     </section>
 
     <!-- our products -->
-    <section class="container text-center p-1 pt-5" id="products">
+    <section class="container text-center pt-5" id="products">
       <h1 class="p-5 pt-4 mt-5">Our <span id="box">Products</span></h1>
     <!-- card section -->
     <div class="container p-5">
@@ -248,7 +248,7 @@
     </section>
 
     <!-- our categories -->
-    <section class="container text-center p-1 pt-5" id="categories">
+    <section class="container text-center pt-5" id="categories">
       <h1 class="p-5 pt-4 mt-5">Our <span id="box">Categories</span></h1>
       <!-- card section -->
       <div class="container p-5">
@@ -311,7 +311,7 @@
     </section>
 
     <!-- customers reviews -->
-    <section class="container text-center p-1 pt-5" id="reviews">
+    <section class="container text-center pt-5" id="reviews">
       <h1 class="p-5 pt-4 mt-5">Customer's<span id="box">Reviews</span></h1>
       
       <!-- card section -->
@@ -385,7 +385,7 @@
     </section>
 
     <!-- blog -->
-    <section class="container p-1 pt-5" id="blog">
+    <section class="container pt-5" id="blog">
       <h1 class="p-5 text-center pt-4 mt-5">Our<span id="box">Blogs</span></h1>
       <div class="container p-5">
         <div class="row row text-left g-4">
@@ -441,50 +441,50 @@
     </section>
 
     <!-- footer -->
-    <footer class="p-5 bg-white text-black position-relative">
+    <footer class="p-5 bg-white position-relative">
+      <div class="container">
+        <div class="row justify-content-between">
 
-        <div class="container">
-          <div class="row justify-content-between">
+          <div class="col-md mt-2">
+            <h3>SULTAN<i class="fa-solid fa-basket-shopping"></i></h3>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Alias, Quod?
+            </p>
+            <a href="#" id="icons"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://twitter.com/iamdanztee" id="icons"><i class="fa-brands fa-twitter-square"></i></a>
+            <a href="https://instagram.com/iamdanztee" id="icons"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" id="icons"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
 
-            <div class="col-md">
-              <h3>SULTAN<i class="fa-solid fa-basket-shopping"></i></h3>
-              <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Alias, Quod?
-              </p>
-              <a href="#" id="icons"><i class="fa-brands fa-facebook-square"></i></a>
-              <a href="#" id="icons"><i class="fa-brands fa-twitter-square"></i></a>
-              <a href="#" id="icons"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" id="icons"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+          <div class="col-md mt-2" id="conta">
+            <h3>Contact info</h3>
+            <p><i class="fa-solid fa-phone-flip"></i><span>+2348153537619</span></p>
+            <p><i class="fa-solid fa-phone-flip"></i><span>+2348153537619</span></p>
+            <p><i class="fa-solid fa-envelope"></i> <span>olowoniyidaniel@gmail.com</span></p>
+            <p>Ogun Nigeria - 27273</p>
+          </div>
 
-            <div class="col-md mt-2" id="conta">
-              <h3>Contact info</h3>
-              <p><i class="fa-solid fa-phone-flip"></i><span>+2348153537619</span></p>
-              <p><i class="fa-solid fa-phone-flip"></i><span>+2348153537619</span></p>
-              <p><i class="fa-solid fa-envelope"></i> <span>olowoniyidaniel@gmail.com</span></p>
-              <p>Ogun Nigeria - 27273</p>
-            </div>
+          <div class="col-md mt-2" id="conta">
+            <h3>Quick links</h3>
+            <p><i class="fa-solid fa-arrow-right"></i><a href="#" id="link">Home</a></p>
+            <p><i class="fa-solid fa-arrow-right"></i><a href="#features" id="link">Features</a></p>
+            <p><i class="fa-solid fa-arrow-right"></i><a href="#products" id="link">Products</a></p>
+            <p><i class="fa-solid fa-arrow-right"></i><a href="#categories" id="link">Categories</a></p>
+            <p><i class="fa-solid fa-arrow-right"></i><a href="#reviews" id="link">Reviews</a></p>
+            <p><i class="fa-solid fa-arrow-right"></i><a href="#blog" id="link">Blog</a></p>
+          </div>
 
-            <div class="col-md mt-2" id="conta">
-              <h3>Quick links</h3>
-              <p><i class="fa-solid fa-arrow-right"></i><a href="#" id="link">Home</a></p>
-              <p><i class="fa-solid fa-arrow-right"></i><a href="#features" id="link">Features</a></p>
-              <p><i class="fa-solid fa-arrow-right"></i><a href="#products" id="link">Products</a></p>
-              <p><i class="fa-solid fa-arrow-right"></i><a href="#categories" id="link">Categories</a></p>
-              <p><i class="fa-solid fa-arrow-right"></i><a href="#reviews" id="link">Reviews</a></p>
-              <p><i class="fa-solid fa-arrow-right"></i><a href="#blog" id="link">Blog</a></p>
-            </div>
-
-            <div class="col-md mt-2">
-              <h3>Newsletter</h3>
-              <p class="pt-2">Subscribe For Latest Updates</p>
-              <input type="text" class="form-control" placeholder="your email"/>
-              <a class="btn btn-primary mt-3" id="btn">Subscribe</a>
-            </div>
+          <div class="col-md mt-2">
+            <h3>Newsletter</h3>
+            <p class="pt-2">Subscribe For Latest Updates</p>
+            <input type="text" class="form-control" placeholder="your email"/>
+            <a class="btn btn-primary mt-3" id="btn">Subscribe</a>
           </div>
         </div>
-        <div class="copy">
-          Created By <span id="org">Daniel</span> | All Rights Reserved.
-        </div>
+      </div>
+
+      <div class="copy">
+        Created By <span id="org">Daniel</span> | All Rights Reserved.
+      </div>
     </footer>  
 
     <script

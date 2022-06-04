@@ -2,10 +2,18 @@ const navtog = document.querySelector("#check");
 const nav = document.querySelector("ul");
 const searchbar = document.querySelector("#searchbar");
 
-const search = document.querySelector("#search");
+let havNav = nav.classList.contains("show");
+let haveSearch = search.classList.contains("d-none");
 
 navtog.addEventListener("click", function () {
-  nav.classList.toggle("show");
+  havNav = nav.classList.contains("show");
+  if (havNav) {
+    nav.classList.remove("show");
+  }
+  if (!havNav) {
+    nav.classList.add("show");
+    search.classList.add("d-none");
+  }
 });
 
 nav.addEventListener("click", function () {
@@ -13,6 +21,12 @@ nav.addEventListener("click", function () {
 });
 
 searchbar.addEventListener("click", function () {
-  console.log("click");
-  search.classList.toggle("d-none");
+  haveSearch = search.classList.contains("d-none");
+  if (haveSearch) {
+    search.classList.remove("d-none");
+    nav.classList.remove("show");
+  }
+  if (!haveSearch) {
+    search.classList.add("d-none");
+  }
 });

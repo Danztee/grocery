@@ -9,7 +9,7 @@
 body::before {
   display: block;
   content: "";
-  height: 60px;
+  height: 50px;
 }
 body {
   background: whitesmoke;
@@ -119,9 +119,9 @@ a:hover {
   height: 50vh;
 }
 .home h1 {
-  padding-top: 7%;
-  text-align: center;
   font-size: 40px;
+  position: relative;
+  bottom: 30px;
 }
 #org {
   color: #ff7800;
@@ -129,9 +129,10 @@ a:hover {
 
 .home p {
   text-align: center;
-  padding: 20px;
   font-size: 20px;
   color: gray;
+  position: relative;
+  bottom: 20px;
 }
 #btn {
   color: #130f40;
@@ -141,9 +142,11 @@ a:hover {
   margin-top: -10px;
   width: 130px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 20px;
   background: none;
   text-transform: capitalize;
+  position: relative;
+  bottom: 15px;
 }
 
 #btn:hover {
@@ -152,7 +155,7 @@ a:hover {
 
 #box {
   background-color: #ff7800;
-  padding: 20px;
+  padding: 0.5rem 3rem;
   border-radius: 5px;
   color: white;
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
@@ -207,7 +210,7 @@ h3 {
 }
 
 #bod {
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #130f40;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -238,6 +241,10 @@ footer #conta i {
   color: #ff7800;
 }
 
+footer #btn {
+  position: relative;
+  top: 5px;
+}
 footer p {
   color: #666;
   font-size: 15px;
@@ -272,6 +279,10 @@ footer h3 i {
   bottom: 3px;
 }
 
+footer h3 {
+  color: #130f40;
+}
+
 .show {
   left: 0;
 }
@@ -281,7 +292,7 @@ footer h3 i {
   margin: 20px;
   text-align: center;
   padding: 20px;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: normal;
   color: #130f40;
 }
@@ -289,8 +300,8 @@ footer h3 i {
 #search {
   width: 25em;
   position: relative;
-  bottom: 12vh;
-  left: 9em;
+  bottom: 5.5em;
+  left: 7em;
   float: right;
   /* transition: all 1.5s; */
 }
@@ -344,9 +355,9 @@ footer h3 i {
   nav ul {
     position: fixed;
     width: 45%;
-    height: 40vh;
+    height: 14em;
     background: white;
-    top: 100px;
+    top: 110px;
     display: inline-block;
     border-radius: 10px;
     padding: 10px;
@@ -381,7 +392,18 @@ footer h3 i {
   #search {
     width: 20em;
     position: relative;
-    top: 10px;
+    bottom: 0;
+    margin-top: 85px;
+    float: right;
+  }
+}
+
+@media (max-width: 623px) {
+  #search {
+    width: 20em;
+    position: relative;
+    margin-top: 0;
+    top: 5px;
     left: 0;
     float: right;
   }
