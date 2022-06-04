@@ -9,7 +9,7 @@
 body::before {
   display: block;
   content: "";
-  height: 60px;
+  height: 65px;
 }
 body {
   background: whitesmoke;
@@ -116,7 +116,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 55vh;
 }
 .home h1 {
   font-size: 35px;
