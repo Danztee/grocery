@@ -18,13 +18,13 @@ body {
 
 .icon i {
   background: whitesmoke;
-  width: 45px;
+  width: 40px;
   height: 40px;
   border: solid 1px black;
   border-radius: 2px;
   text-align: center;
   justify-content: center;
-  margin-left: -23px;
+  margin-left: -25px;
 }
 
 .icon i:hover {
@@ -89,8 +89,8 @@ a:hover {
 .icon {
   display: flex;
   position: relative;
-  bottom: 200%;
-  gap: 25px;
+  bottom: 190%;
+  gap: 20px;
   float: right;
   right: 1em;
   cursor: pointer;
@@ -99,7 +99,7 @@ a:hover {
 .icon i {
   color: #130f40;
   font-size: 20px;
-  line-height: 50px;
+  line-height: 40px;
 }
 
 .icon i:hover {
@@ -266,7 +266,7 @@ footer #link:hover {
 }
 
 #icons {
-  font-size: 30px;
+  font-size: 20px;
   padding: 5px;
   color: #130f40;
 }
@@ -379,7 +379,7 @@ footer h3 {
   .icon {
     position: static;
     gap: 20px;
-    margin-top: 17px;
+    margin-top: 20px;
     margin-right: 20px;
   }
 
