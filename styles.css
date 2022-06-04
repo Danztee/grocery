@@ -289,7 +289,7 @@ footer h3 i {
 #search {
   width: 25em;
   position: relative;
-  bottom: 15vh;
+  bottom: 12vh;
   left: 9em;
   float: right;
   /* transition: all 1.5s; */
@@ -384,6 +384,5 @@ footer h3 i {
     top: 10px;
     left: 0;
     float: right;
-    display: none;
   }
 }
