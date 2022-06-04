@@ -4,52 +4,494 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
+    <title>Document</title>
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
-    /> -->
+    />
     <script
       src="https://kit.fontawesome.com/0d63ab44ae.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
   </head>
   <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="check">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-      <label class="logo">SULTAN</label>
+    <!-- nav -->
+    <nav class="fixed-top">
+      <label class="logo"><i class="fa-solid fa-basket-shopping"></i>SULTAN <span></span></label>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">features</a></li>
-        <li><a href="#">product</a></li>
-        <li><a href="#">categories</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="#features">features</a></li>
+        <li><a href="#products">product</a></li>
+        <li><a href="#categories">categories</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#blog">Blog</a></li>
       </ul>
       <div class="icon">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bars" class="check" id="check"></i>
+        <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
         <i class="fa-solid fa-cart-shopping"></i>
         <i class="fa-solid fa-user"></i>
       </div>
+      <div class="d-none" id="search">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
     </nav>
+
     <!-- first section -->
     <section class="home">
-      <h1>Fresh And <span>Organic</span> Products For Your</h1>
-      <p>
-        Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quasi, Nobis!
-      </p>
-      <button>shop now</button>
+      <div class="container text-center pt-3">
+        <h1>Fresh And <span id="org">Organic</span> Products For Your</h1>
+        <p>
+          Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quasi,
+          Nobis!
+        </p>
+        <a href="#" class="btn btn-primary" id="btn">shop now</a>
+      </div>
     </section>
+
+    <!-- features section -->
+    <section class="container text-center p-1 pt-5" id="features">
+      <h1 class="p-5 pt-4 mt-5">Our <span id="box">Features</span></h1>
+      <!-- card section -->
+      <div class="container p-5">
+        <div class="row text-center g-4">
+          
+          <!-- starts here -->
+          <div class="col-lg-4 col-md-6" >
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/feature/feature-img-1.png" class="card-img-top" >
+                <h3 class="card-title mb-3 mt-4">Fresh And Organic</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Soluta obcaecati, eos accusamus saepe provident voluptas.
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+
+          <!-- starts here -->
+          <div class="col-lg-4 col-md-6" id="body">
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/feature/feature-img-2.png" class="card-img-top" alt="...">
+                <h3 class="card-title mb-3 mt-4">Free Delivery</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Soluta obcaecati, eos accusamus saepe provident voluptas.
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+
+          <!-- starts here -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/feature/feature-img-3.png" class="card-img-top" alt="...">
+                <h3 class="card-title mb-3 mt-4">Free Delivery</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Soluta obcaecati, eos accusamus saepe provident voluptas.
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+        </div>
+    </section>
+
+    <!-- our products -->
+    <section class="container text-center p-1 pt-5" id="products">
+      <h1 class="p-5 pt-4 mt-5">Our <span id="box">Products</span></h1>
+    <!-- card section -->
+    <div class="container p-5">
+      <div class="row text-center g-4">
+        <!-- starts here -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card" id="card">
+            <div class="card-body text-center">
+              <img src="/products/product-1.png" class="card-img-top" >
+              <h3 class="card-title mb-3">Fresh Orange</h3>
+              <p class="price"> $4.99/ - $10.99/
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- ends here -->
+
+        <!-- starts here -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card" id="card">
+            <div class="card-body text-center">
+              <img src="/products/product-2.png" class="card-img-top" alt="...">
+              <h3 class="card-title mb-3">Free Onions</h3>
+              <p class="price"> $4.99/ - $10.99/
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- ends here -->
+
+        <!-- starts here -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card" id="card">
+            <div class="card-body text-center">
+              <img src="/products/product-3.png" class="card-img-top" alt="...">
+              <h3 class="card-title mb-3">Free Meat</h3>
+              <p class="price"> $4.99/ - $10.99/
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- ends here -->
+
+                <!-- starts here -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card" id="card">
+            <div class="card-body text-center">
+              <img src="/products/product-4.png" class="card-img-top" alt="...">
+              <h3 class="card-title mb-3">Free Cabbage</h3>
+              <p class="price"> $4.99/ - $10.99/
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- ends here -->
+
+        <!-- starts here -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card" id="card">
+            <div class="card-body text-center">
+              <img src="/products/product-5.png" class="card-img-top" alt="...">
+              <h3 class="card-title mb-3">Free Potato</h3>
+              <p class="price"> $4.99/ - $10.99/
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- ends here -->
+
+        <!-- starts here -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card" id="card">
+            <div class="card-body text-center">
+              <img src="/products/product-6.png" class="card-img-top" alt="...">
+              <h3 class="card-title mb-3">Free Avocado</h3>
+              <p class="price"> $4.99/ - $10.99/
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- ends here -->
+
+      </div>
+    </section>
+
+    <!-- our categories -->
+    <section class="container text-center p-1 pt-5" id="categories">
+      <h1 class="p-5 pt-4 mt-5">Our <span id="box">Categories</span></h1>
+      <!-- card section -->
+      <div class="container p-5">
+        <div class="row text-center g-4">
+          <!-- starts here -->
+          <div class="col-lg-3 col-md-6" >
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/cart/cat-1.png" class="card-img-top" >
+                <h3 class="card-title mb-3 pt-3">Organic Vegetables</h3>
+                <p class="card-text" id="small">Upto 45% Off
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+          <!-- starts here -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/cart/cat-2.png" class="card-img-top" >
+                <h3 class="card-title mb-3 pt-5">Fresh Pepper</h3>
+                <p class="card-text" id="small">Upto 45% Off
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+          <!-- starts here -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/cart/cat-3.png" class="card-img-top" >
+                <h3 class="card-title mb-3 pt-5">Fresh Milk</h3>
+                <p class="card-text" id="small">Upto 45% Off
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+          <!-- starts here -->
+          <div class="col-lg-3 col-md-6">
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/cart/cat-4.png" class="card-img-top" >
+                <h3 class="card-title mb-3 pt-5">Fresh Meat</h3>
+                <p class="card-text" id="small">Upto 45% Off
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- customers reviews -->
+    <section class="container text-center p-1 pt-5" id="reviews">
+      <h1 class="p-5 pt-4 mt-5">Customer's<span id="box">Reviews</span></h1>
+      
+      <!-- card section -->
+      <div class="container p-5">
+        <div class="row text-center g-4">
+
+          <!-- starts here -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/human/pic-1.png" class="card-img-top p-2 m-2" id="human">
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Soluta obcaecati, eos accusamus saepe provident voluptas.
+                </p>
+                <h3 class="card-title mb-3">John Doe</h3>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+          <!-- starts here -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/human/pic-2.png" class="card-img-top p-2 m-2" id="human">
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Soluta obcaecati, eos accusamus saepe provident voluptas.
+                </p>
+                <h3 class="card-title mb-3">John Doe</h3>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+          <!-- starts here -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card" id="card">
+              <div class="card-body text-center">
+                <img src="/human/pic-3.png" class="card-img-top p-2 m-2" id="human">
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Soluta obcaecati, eos accusamus saepe provident voluptas.
+                </p>
+                <h3 class="card-title mb-3">John Doe</h3>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section class="container p-1 pt-5" id="blog">
+      <h1 class="p-5 text-center pt-4 mt-5">Our<span id="box">Blogs</span></h1>
+      <div class="container p-5">
+        <div class="row row text-left g-4">
+
+          <!-- starts here -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card"  id="card2">
+              <img src="blog/blog-1.jpeg" class="card-img-top" alt="...">
+              <p id="bod"><i class="fa-solid fa-user"></i><em id="user">by user</em><span>3rd of july, 2022</span></p>
+              <div class="card-body ">
+                <h5 class="card-title">Fresh And Organic Vegitables And Fruits</h5>
+                <p class="card-text">
+                  Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Deleniti?
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+          <!-- starts here -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card"  id="card2">
+              <img src="blog/blog-2.jpeg" class="card-img-top" alt="...">
+              <p id="bod"><i class="fa-solid fa-user"></i><em id="user">by user</em><span>3rd of july, 2022</span></p>
+              <div class="card-body ">
+                <h5 class="card-title">Fresh And Organic Vegitables And Fruits</h5>
+                <p class="card-text">
+                  Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Deleniti?
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+          <!-- starts here -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card" id="card2">
+              <img src="blog/blog-3.jpeg" class="card-img-top" alt="...">
+              <p id="bod"><i class="fa-solid fa-user"></i><em id="user">by user</em><span>3rd of july, 2022</span></p>
+              <div class="card-body ">
+                <h5 class="card-title">Fresh And Organic Vegitables And Fruits</h5>
+                <p class="card-text">
+                  Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Veniam, Deleniti?
+                </p>
+                <a href="#" class="btn btn-primary mt-3" id="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- ends here -->
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 bg-white text-black position-relative">
+
+        <div class="container">
+          <div class="row justify-content-between">
+
+            <div class="col-md">
+              <h3>SULTAN<i class="fa-solid fa-basket-shopping"></i></h3>
+              <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Alias, Quod?
+              </p>
+              <a href="#" id="icons"><i class="fa-brands fa-facebook-square"></i></a>
+              <a href="#" id="icons"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="#" id="icons"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" id="icons"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <div class="col-md mt-2" id="conta">
+              <h3>Contact info</h3>
+              <p><i class="fa-solid fa-phone-flip"></i><span>+2348153537619</span></p>
+              <p><i class="fa-solid fa-phone-flip"></i><span>+2348153537619</span></p>
+              <p><i class="fa-solid fa-envelope"></i> <span>olowoniyidaniel@gmail.com</span></p>
+              <p>Ogun Nigeria - 27273</p>
+            </div>
+
+            <div class="col-md mt-2" id="conta">
+              <h3>Quick links</h3>
+              <p><i class="fa-solid fa-arrow-right"></i><a href="#" id="link">Home</a></p>
+              <p><i class="fa-solid fa-arrow-right"></i><a href="#features" id="link">Features</a></p>
+              <p><i class="fa-solid fa-arrow-right"></i><a href="#products" id="link">Products</a></p>
+              <p><i class="fa-solid fa-arrow-right"></i><a href="#categories" id="link">Categories</a></p>
+              <p><i class="fa-solid fa-arrow-right"></i><a href="#reviews" id="link">Reviews</a></p>
+              <p><i class="fa-solid fa-arrow-right"></i><a href="#blog" id="link">Blog</a></p>
+            </div>
+
+            <div class="col-md mt-2">
+              <h3>Newsletter</h3>
+              <p class="pt-2">Subscribe For Latest Updates</p>
+              <input type="text" class="form-control" placeholder="your email"/>
+              <a class="btn btn-primary mt-3" id="btn">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <div class="copy">
+          Created By <span id="org">Daniel</span> | All Rights Reserved.
+        </div>
+    </footer>  
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -1,12 +1,18 @@
-const navToggle = document.querySelector(".nav-toggle");
-const links = document.querySelector(".links");
+const navtog = document.querySelector("#check");
+const nav = document.querySelector("ul");
+const searchbar = document.querySelector("#searchbar");
 
-navToggle.addEventListener("click", function () {
-  let haveLinks = links.classList.contains("show-links");
+const search = document.querySelector("#search");
 
-  if (haveLinks) {
-    links.classList.remove("show-links");
-  } else {
-    links.classList.add("show-links");
-  }
+navtog.addEventListener("click", function () {
+  nav.classList.toggle("show");
+});
+
+nav.addEventListener("click", function () {
+  this.classList.remove("show");
+});
+
+searchbar.addEventListener("click", function () {
+  console.log("click");
+  search.classList.toggle("d-none");
 });

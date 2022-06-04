@@ -6,16 +6,50 @@
   box-sizing: border-box;
 }
 
-nav {
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+body {
   background: whitesmoke;
+  height: 100px;
+}
+
+.icon i {
+  background: whitesmoke;
+  width: 35px;
+  height: 50px;
+  border: solid 1px black;
+  border-radius: 2px;
+  text-align: center;
+  justify-content: center;
+  margin-left: -23px;
+}
+
+.icon i:hover {
+  background-color: #ff7800;
+  transition: all 0.2s linear;
+}
+
+nav {
+  background: white;
+  box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
   height: 80px;
   width: 100%;
   justify-content: space-between;
   justify-items: auto;
 }
 
+nav i {
+  color: #ff7800;
+  margin-right: 10px;
+  position: relative;
+  bottom: 3px;
+}
+
 label.logo {
-  color: blue;
+  color: #130f40;
   font-size: 30px;
   line-height: 80px;
   margin-left: 40px;
@@ -32,39 +66,45 @@ nav ul {
   position: relative;
   bottom: 100%;
   left: 10px;
+  text-decoration: none;
 }
 
 nav ul li {
   line-height: 80px;
   cursor: pointer;
+  text-decoration: none;
 }
 nav ul li a {
+  color: #130f40;
   font-size: 20px;
   margin: 0 10px;
   text-transform: capitalize;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff7800;
+  transition: all 0.2s linear;
 }
 
 .icon {
   display: flex;
   position: relative;
   bottom: 200%;
-  gap: 20px;
+  gap: 25px;
   float: right;
-  right: 2em;
+  right: 1em;
   cursor: pointer;
 }
 
 .icon i {
+  color: #130f40;
   font-size: 20px;
-  line-height: 80px;
+  line-height: 50px;
 }
 
-.check {
-  font-size: 30px;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  display: none;
+.icon i:hover {
+  color: white;
+  transition: all 0.2s linear;
 }
 
 #check {
@@ -78,15 +118,13 @@ nav ul li a {
   background-position: center;
   height: 50vh;
 }
-
 .home h1 {
   padding-top: 7%;
-  /* padding: 20px; */
   text-align: center;
   font-size: 40px;
 }
-#sec1 {
-  color: orange;
+#org {
+  color: #ff7800;
 }
 
 .home p {
@@ -95,34 +133,177 @@ nav ul li a {
   font-size: 20px;
   color: gray;
 }
-.home button {
-  padding: 5px;
-  width: 10%;
-  height: 14%;
-  border-radius: 15px;
+#btn {
+  color: #130f40;
+  border: solid 1px #130f40;
+  border-radius: 5px;
   margin: 5px;
-  outline: none;
+  margin-top: -10px;
+  width: 130px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 22px;
   background: none;
   text-transform: capitalize;
-  margin-left: 45%;
-}
-.home button:hover {
-  background-color: orange;
 }
 
-.features h1 {
-  font-size: 30px;
-  text-align: center;
-  padding: 50px;
-  margin-top: 30px;
+#btn:hover {
+  background-color: #ff7800;
 }
 
 #box {
-  background-color: orange;
+  background-color: #ff7800;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+img {
+  width: 198px;
+  height: 150px;
+}
+
+#body h3,
+p {
+  color: #130f40;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+#card {
+  box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
+}
+
+#card2 {
+  box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
+}
+.price {
+  color: grey;
+}
+
+.stars i {
+  color: #ff7800;
+}
+
+#categories #small {
+  font-size: small;
+}
+
+#human {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+
+#blog h5 {
+  color: #130f40;
+  font-weight: bold;
+}
+
+#blog p {
+  color: grey;
+}
+
+#bod {
+  border-bottom: solid 1px black;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  padding-bottom: 10px;
+}
+
+#bod em {
+  position: relative;
+  top: 10px;
+}
+
+#bod span {
+  float: right;
   padding: 10px;
-  border-radius: 10px;
+}
+
+#bod i {
+  color: #ff7800;
+  padding: 10px;
+}
+
+footer {
+  height: -10vh;
+}
+
+footer #conta i {
+  color: #ff7800;
+}
+
+footer p {
+  color: #666;
+  font-size: 15px;
+}
+
+footer p span {
+  margin-left: 20px;
+}
+
+footer #link {
+  color: #666;
+  font-size: 15px;
+  text-decoration: none;
+  text-indent: 20px;
+  margin-left: 20px;
+}
+
+footer #link:hover {
+  color: #ff7800;
+}
+
+#icons {
+  font-size: 30px;
+  padding: 5px;
+  color: #130f40;
+}
+
+footer h3 i {
+  color: #ff7800;
+  margin-left: 10px;
+  position: relative;
+  bottom: 3px;
+}
+
+.show {
+  left: 0;
+}
+
+.copy {
+  border-top: solid 2px #130f40;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: normal;
+  color: #130f40;
+}
+
+#search {
+  width: 25em;
+  position: relative;
+  bottom: 15vh;
+  left: 9em;
+  float: right;
+  /* transition: all 1.5s; */
+}
+
+#search i {
+  position: relative;
+  top: 10px;
+  right: 40px;
+  color: #130f40;
+}
+
+#search input {
+  box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
 }
 
 /* mediun screen below */
@@ -134,22 +315,45 @@ nav ul li a {
   .check {
     display: block;
     font-size: 25px;
-    line-height: 83px;
+    line-height: 85px;
     cursor: pointer;
+  }
+
+  #check {
+    display: block;
+  }
+
+  .check i {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 22px;
+    font-size: 17px;
+  }
+
+  nav label i {
+    color: #130f40;
+  }
+
+  .check:hover {
+    color: #666;
+    transition: all 0.2s linear;
   }
 
   nav ul {
     position: fixed;
-    width: 35%;
+    width: 45%;
     height: 40vh;
-    background: green;
+    background: white;
     top: 100px;
     display: inline-block;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 300px;
+    margin-left: 250px;
     left: -100%;
     transition: all 1.5s;
+    box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
   }
 
   nav ul li {
@@ -159,21 +363,27 @@ nav ul li a {
   }
 
   nav ul li a {
-    color: white;
+    color: #130f40;
   }
 
   .icon {
     position: static;
-    gap: 15px;
-    margin-right: 15px;
+    gap: 20px;
+    margin-top: 17px;
+    margin-right: 20px;
   }
 
   .icon i {
     display: inline;
-    font-size: 20px;
+    font-size: 17px;
   }
 
-  #check:checked ~ ul {
+  #search {
+    width: 30em;
+    position: relative;
+    top: 10px;
     left: 0;
+    float: right;
+    display: none;
   }
 }
