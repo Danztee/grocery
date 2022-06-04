@@ -9,7 +9,7 @@
 body::before {
   display: block;
   content: "";
-  height: 50px;
+  height: 60px;
 }
 body {
   background: whitesmoke;
@@ -18,8 +18,8 @@ body {
 
 .icon i {
   background: whitesmoke;
-  width: 35px;
-  height: 50px;
+  width: 45px;
+  height: 40px;
   border: solid 1px black;
   border-radius: 2px;
   text-align: center;
@@ -163,11 +163,6 @@ a:hover {
   border-radius: 5px;
   color: white;
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
-}
-
-img {
-  width: 198px;
-  height: 150px;
 }
 
 #body h3,
