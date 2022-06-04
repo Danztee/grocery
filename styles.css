@@ -149,6 +149,10 @@ a:hover {
   bottom: 15px;
 }
 
+#btn:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+
 #btn:hover {
   background-color: #ff7800;
 }
